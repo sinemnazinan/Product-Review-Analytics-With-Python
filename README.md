@@ -11,6 +11,16 @@ platformlardan toplanan kullanıcı yorumları, **Zemberek dil işleme modülü 
 ve işlenmiştir. Ayrıca, projede kullanılan ileri düzey makine öğrenimi algoritmaları, yorumların yıldız derecelendirmeleriyle
 olan ilişkisini analiz ederek ürün geliştirme süreçlerine ışık tutmayı mümkün kılmıştır.
 
+## ⚠️ Önemli Notlar
+
+📌 **ChromeDriver Uyumluluğu**: ChromeDriver sürümünüzün, bilgisayarınızda yüklü olan Google Chrome sürümüyle aynı olduğundan emin olun. Eğer sürümler uyuşmazsa veri çekme işlemi çalışmayabilir.
+
+📌 **Veri Çekme Sınırlandırması**: Bu kod, **Google Chrome üzerinden erişilebilen sitelerden veri çekmek için** tasarlanmıştır. Çekmek istediğiniz verilerin Chrome tarayıcınızdan erişilebilir olduğundan emin olun.
+
+📌 **Zemberek NLP Entegrasyonu**: Proje içerisinde bulunan **JAR dosyaları**, Zemberek NLP modülüne doğrudan erişim sağlar. Harici bir yükleme yapmanıza gerek yoktur.
+
+📌 **Eğitilmiş Model Mevcuttur**: Projede **önceden eğitilmiş bir makine öğrenmesi modeli** ve **TF-IDF vektörleştiricisi** bulunmaktadır. Modeli sıfırdan eğitmek istemeyen kullanıcılar, bu hazır modelleri doğrudan indirip kullanabilirler.
+
 Proje, aşağıdaki temel adımlardan oluşmaktadır:
 
 1. **Yorumların Toplanması** 🛒
@@ -201,6 +211,16 @@ Bu README, projenin kapsamlı bir özetini ve kullanım talimatlarını içermek
 ## 🚀 Introduction
 
 This project aims to analyze product reviews left by users on online platforms to gain deeper insights into consumer satisfaction. In today's digitalized world, user experiences and reviews play a critical role in understanding consumer behavior and enabling businesses to make strategic decisions. In this context, **natural language processing (NLP) and machine learning** techniques are utilized to extract meaningful information from large datasets. The project workflow consists of stages such as data collection, processing, analysis, and model development based on the analysis. In this process, user reviews collected from online platforms have been cleaned and processed using the **Zemberek NLP module and Python-based libraries**. Additionally, advanced machine learning algorithms used in the project made it possible to analyze the relationship between reviews and star ratings, shedding light on product development processes.
+
+## ⚠️ Important Notes
+
+📌 **ChromeDriver Compatibility**: Make sure that the ChromeDriver version matches the version of your installed Google Chrome. If there is a version mismatch, the scraper may not work properly.
+
+📌 **Data Extraction Limitation**: This script is designed to scrape data from websites accessible via Google Chrome. Ensure that the pages you want to scrape are reachable through the browser.
+
+📌 **Zemberek NLP Integration**: The Zemberek NLP module can be accessed directly from the JAR files included in the project directory, eliminating the need for additional installations.
+
+📌 **Pre-trained Model Availability**: A **pre-trained machine learning model** and a **TF-IDF vectorizer** are available for direct download and use. If you want to skip training from scratch, you can use these pre-trained files.
 
 The project consists of the following key steps:
 
